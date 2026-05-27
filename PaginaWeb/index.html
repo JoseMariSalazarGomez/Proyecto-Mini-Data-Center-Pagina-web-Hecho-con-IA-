@@ -1,49 +1,455 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Soluciones profesionales de infraestructura tecnológica para centros educativos. Implementación de mini data centers seguros y escalables.">
-    <title>Infraestructura Tecnológica para Centros Educativos | DataCenter Solutions</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniDataCenter — Infraestructura Educativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
-    <header>
-        <h1>Infraestructura Tecnológica para el Futuro de la Educación</h1>
-        <p>Diseñamos e implementamos soluciones de mini data centers para institutos y centros públicos, garantizando seguridad, escalabilidad y rendimiento óptimo.</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="sobre.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
 
-    <div class="container">
-        <section>
-            <h2>Transformando la Infraestructura Educativa</h2>
-            <p>Nos especializamos en el diseño, instalación y mantenimiento de mini data centers adaptados a las necesidades específicas de instituciones educativas. Nuestra experiencia garantiza entornos tecnológicos robustos que soportan las demandas actuales de la enseñanza digital.</p>
-            <p>Trabajamos con equipos de última generación y metodologías probadas para asegurar que cada centro educativo cuente con la base tecnológica necesaria para ofrecer una educación de calidad en el siglo XXI.</p>
-        </section>
+  <!-- GRID BG -->
+  <div class="grid-bg"></div>
 
-        <section>
-            <h2>Por Qué Elegirnos</h2>
-            <ul>
-                <li>Infraestructura escalable diseñada para crecer con sus necesidades institucionales</li>
-                <li>Seguridad multicapa con protocolos certificados para protección de datos sensibles</li>
-                <li>Mantenimiento preventivo y soporte técnico especializado disponible 24/7</li>
-                <li>Optimización energética que reduce costos operativos hasta en un 40%</li>
-                <li>Implementación rápida con mínima interrupción de las actividades educativas</li>
-                <li>Cumplimiento total con normativas de protección de datos y privacidad</li>
-            </ul>
-        </section>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">▣</span>
+        <span class="logo-text">MiniDC<span class="accent">.</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#componentes">Hardware</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 DataCenter Solutions para Educación. Todos los derechos reservados.</p>
-    </footer>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-tag">
+      <span class="dot"></span> Proyecto activo — IES Málaga · 2025
+    </div>
+    <h1 class="hero-title">
+      Mini<br/>
+      <span class="hero-outline">Data</span><br/>
+      Center
+    </h1>
+    <p class="hero-sub">
+      Infraestructura de red completa desplegada por estudiantes de SMR.<br/>
+      Servidores reales. Servicios reales. Conocimiento real.
+    </p>
+    <div class="hero-ctas">
+      <a href="#proyecto" class="btn-primary">Ver el proyecto</a>
+      <a href="#equipo" class="btn-ghost">Conocer el equipo</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">5</span>
+        <span class="stat-label">Ingenieros</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num">11</span>
+        <span class="stat-label">RAs cubiertos</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Servicios</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num">6</span>
+        <span class="stat-label">Módulos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>DNS</span><span>·</span>
+      <span>DHCP</span><span>·</span>
+      <span>FTP</span><span>·</span>
+      <span>FIREWALL</span><span>·</span>
+      <span>NAS</span><span>·</span>
+      <span>VLAN</span><span>·</span>
+      <span>BACKUP</span><span>·</span>
+      <span>CMS</span><span>·</span>
+      <span>EMAIL SERVER</span><span>·</span>
+      <span>LINUX</span><span>·</span>
+      <span>WINDOWS SERVER</span><span>·</span>
+      <span>DNS</span><span>·</span>
+      <span>DHCP</span><span>·</span>
+      <span>FTP</span><span>·</span>
+      <span>FIREWALL</span><span>·</span>
+      <span>NAS</span><span>·</span>
+      <span>VLAN</span><span>·</span>
+      <span>BACKUP</span><span>·</span>
+      <span>CMS</span><span>·</span>
+      <span>EMAIL SERVER</span><span>·</span>
+      <span>LINUX</span><span>·</span>
+      <span>WINDOWS SERVER</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- PROYECTO -->
+  <section class="section" id="proyecto">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">01 / Proyecto</span>
+        <h2>¿Qué estamos<br/><span class="accent">construyendo?</span></h2>
+      </div>
+      <div class="proyecto-grid">
+        <div class="proyecto-text">
+          <p>El anteproyecto consiste en crear un <strong>mini-datacenter de aula</strong> donde los estudiantes de SMR ponen en práctica conocimientos reales de infraestructura IT sobre hardware físico.</p>
+          <p>Diseñamos la red, montamos los servidores, configuramos los servicios y aseguramos el sistema. De la teoría al rack, paso a paso.</p>
+          <div class="justificacion-badges">
+            <span class="badge">Redes Locales</span>
+            <span class="badge">S.O. en Red</span>
+            <span class="badge">Seguridad Informática</span>
+            <span class="badge">Servicios de Red</span>
+            <span class="badge">Aplicaciones Web</span>
+            <span class="badge">Montaje y Mant.</span>
+          </div>
+        </div>
+        <div class="proyecto-fases">
+          <div class="fase" data-num="01">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Diseño de red</h4>
+              <p>Topología, direccionamiento IP, subredes y dispositivos.</p>
+            </div>
+          </div>
+          <div class="fase" data-num="02">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Montaje físico</h4>
+              <p>Instalación de servidores, switches, routers y cableado.</p>
+            </div>
+          </div>
+          <div class="fase" data-num="03">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Configuración de S.O.</h4>
+              <p>Windows Server y Linux según los servicios requeridos.</p>
+            </div>
+          </div>
+          <div class="fase" data-num="04">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Servicios de red</h4>
+              <p>DNS, DHCP, FTP, correo y gestión de usuarios.</p>
+            </div>
+          </div>
+          <div class="fase" data-num="05">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Aplicaciones web</h4>
+              <p>CMS/LMS integrado con correo y transferencia de archivos.</p>
+            </div>
+          </div>
+          <div class="fase" data-num="06">
+            <div class="fase-icon">◈</div>
+            <div>
+              <h4>Seguridad y backup</h4>
+              <p>Cortafuegos, control de acceso y copias de respaldo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section section-dark" id="servicios">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">02 / Servicios</span>
+        <h2>Stack de<br/><span class="accent">infraestructura</span></h2>
+      </div>
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>DNS / DHCP</h3>
+          <p>Resolución de nombres y asignación dinámica de IPs en la red local.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>FTP Server</h3>
+          <p>Transferencia de archivos segura entre clientes y servidores del datacenter.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>Mail Server</h3>
+          <p>Servicio de correo electrónico interno integrado con el resto de la infraestructura.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>NAS Storage</h3>
+          <p>Servidor de almacenamiento en red centralizado para todos los equipos del aula.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>CMS / LMS</h3>
+          <p>Plataforma web colaborativa de aprendizaje desplegada sobre la infraestructura propia.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">⬡</div>
+          <h3>Firewall &amp; Backup</h3>
+          <p>Políticas de acceso, cortafuegos y copias de seguridad automatizadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="section" id="equipo">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">03 / Equipo</span>
+        <h2>Los <span class="accent">5 ingenieros</span><br/>detrás del rack</h2>
+      </div>
+      <div class="equipo-grid">
+
+        <div class="miembro-card">
+          <div class="miembro-num">01</div>
+          <div class="miembro-avatar">JS</div>
+          <h3>José María<br/>Salazar Gómez</h3>
+          <div class="miembro-rol">Network Designer</div>
+          <p>Diseño de red, configuración de IPs, subredes, switches y routers.</p>
+          <div class="miembro-ras">
+            <span class="ra">RA1</span>
+            <span class="ra">RA2</span>
+            <span class="ra">RA5</span>
+          </div>
+        </div>
+
+        <div class="miembro-card">
+          <div class="miembro-num">02</div>
+          <div class="miembro-avatar">ES</div>
+          <h3>Eric Suarez<br/>Arreza</h3>
+          <div class="miembro-rol">Hardware Engineer</div>
+          <p>Montaje físico, instalación de S.O. en servidores y compatibilidad de equipos.</p>
+          <div class="miembro-ras">
+            <span class="ra">RA3</span>
+            <span class="ra">RA4</span>
+          </div>
+        </div>
+
+        <div class="miembro-card">
+          <div class="miembro-num">03</div>
+          <div class="miembro-avatar">JD</div>
+          <h3>Juan Diego<br/>Molina Jiménez</h3>
+          <div class="miembro-rol">Systems Administrator</div>
+          <p>Configuración de servicios DNS, FTP, correo y gestión de usuarios y permisos.</p>
+          <div class="miembro-ras">
+            <span class="ra">RA6</span>
+            <span class="ra">RA7</span>
+          </div>
+        </div>
+
+        <div class="miembro-card">
+          <div class="miembro-num">04</div>
+          <div class="miembro-avatar">JM</div>
+          <h3>Jesús Medina<br/>Vargas</h3>
+          <div class="miembro-rol">Web & App Deploy</div>
+          <p>Despliegue de CMS/LMS e integración de servicios web, correo y transferencia de archivos.</p>
+          <div class="miembro-ras">
+            <span class="ra">RA8</span>
+            <span class="ra">RA9</span>
+          </div>
+        </div>
+
+        <div class="miembro-card">
+          <div class="miembro-num">05</div>
+          <div class="miembro-avatar">FR</div>
+          <h3>Fran Miguel<br/>Ramírez Gaspar</h3>
+          <div class="miembro-rol">Security & Ops</div>
+          <p>Cortafuegos, políticas de acceso, backup y pruebas de rendimiento.</p>
+          <div class="miembro-ras">
+            <span class="ra">RA10</span>
+            <span class="ra">RA11</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTES / HARDWARE -->
+  <section class="section section-dark" id="componentes">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">04 / Hardware</span>
+        <h2>Componentes<br/><span class="accent">&amp; presupuesto</span></h2>
+      </div>
+      <div class="hardware-layout">
+        <div class="hardware-table-wrap">
+          <table class="hardware-table">
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Uds.</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="hw-name">Servidor NAS</span></td>
+                <td>1</td>
+                <td><span class="badge-comprar">Comprar</span></td>
+              </tr>
+              <tr>
+                <td><span class="hw-name">Discos Duros</span></td>
+                <td>2</td>
+                <td><span class="badge-comprar">Comprar</span></td>
+              </tr>
+              <tr>
+                <td><span class="hw-name">Switches 5p</span></td>
+                <td>4</td>
+                <td><span class="badge-disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td><span class="hw-name">Router VLAN</span></td>
+                <td>1</td>
+                <td><span class="badge-disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td><span class="hw-name">Pack de equipos</span></td>
+                <td>18–20</td>
+                <td><span class="badge-disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td><span class="hw-name">Cableado RJ45</span></td>
+                <td>305m</td>
+                <td><span class="badge-opcional">Opcional</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="presupuesto-cards">
+          <div class="presup-card presup-min">
+            <div class="presup-label">Presupuesto mínimo</div>
+            <div class="presup-amount">500 – 650 €</div>
+            <div class="presup-detail">Solo lo necesario: NAS + 2 HDDs</div>
+            <ul class="presup-items">
+              <li>Servidor NAS <strong>279–330 €</strong></li>
+              <li>Discos Duros ×2 <strong>240–260 €</strong></li>
+            </ul>
+          </div>
+          <div class="presup-card presup-full">
+            <div class="presup-label">Presupuesto completo</div>
+            <div class="presup-amount">18.000 – 20.000 €</div>
+            <div class="presup-detail">Todo el hardware desde cero</div>
+            <ul class="presup-items">
+              <li>NAS + HDDs <strong>~600 €</strong></li>
+              <li>Switches ×5 <strong>~160 €</strong></li>
+              <li>Router VLAN <strong>~55 €</strong></li>
+              <li>Pack equipos <strong>~14.000 €</strong></li>
+              <li>Cableado <strong>~190 €</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RA SECTION -->
+  <section class="section" id="ras">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">05 / Aprendizaje</span>
+        <h2>Resultados de<br/><span class="accent">aprendizaje</span></h2>
+      </div>
+      <div class="ra-grid">
+        <div class="ra-item"><span class="ra-code">RA01</span><span class="ra-desc">Analizar necesidades de infraestructura y planificar la instalación</span></div>
+        <div class="ra-item"><span class="ra-code">RA02</span><span class="ra-desc">Diseñar topologías de red y direccionamiento IP</span></div>
+        <div class="ra-item"><span class="ra-code">RA03</span><span class="ra-desc">Instalar y configurar equipos y S.O. de servidor</span></div>
+        <div class="ra-item"><span class="ra-code">RA04</span><span class="ra-desc">Gestionar dispositivos de almacenamiento y conectividad física</span></div>
+        <div class="ra-item"><span class="ra-code">RA05</span><span class="ra-desc">Administrar redes con DNS, DHCP y FTP</span></div>
+        <div class="ra-item"><span class="ra-code">RA06</span><span class="ra-desc">Configurar cuentas de usuario y permisos en servidor</span></div>
+        <div class="ra-item"><span class="ra-code">RA07</span><span class="ra-desc">Implementar correo electrónico y gestión de archivos</span></div>
+        <div class="ra-item"><span class="ra-code">RA08</span><span class="ra-desc">Desplegar aplicaciones web y entornos colaborativos</span></div>
+        <div class="ra-item"><span class="ra-code">RA09</span><span class="ra-desc">Integrar servicios y asegurar interoperabilidad</span></div>
+        <div class="ra-item"><span class="ra-code">RA10</span><span class="ra-desc">Aplicar medidas de seguridad y control de acceso</span></div>
+        <div class="ra-item"><span class="ra-code">RA11</span><span class="ra-desc">Elaborar documentación técnica y manuales de usuario</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section-dark" id="contacto">
+    <div class="section-inner contact-inner">
+      <div class="section-header">
+        <span class="section-tag">06 / Contacto</span>
+        <h2>¿Interesado en el<br/><span class="accent">proyecto?</span></h2>
+      </div>
+      <p class="contact-sub">Somos estudiantes de SMR aplicando conocimientos reales sobre infraestructura IT. Si tienes dudas, quieres colaborar o simplemente conocer más del proyecto, escríbenos.</p>
+      <a href="mailto:info@minidatacenter.edu" class="btn-primary btn-large">Contactar al equipo →</a>
+      <div class="contact-info">
+        <span>CPIFP Alan Turing · Ciclo SMR · Málaga</span>
+        <span class="sep">·</span>
+        <span>Proyecto 2026-2027</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">
+        <span class="logo-icon">▣</span>
+        <span class="logo-text">Mini Data Center<span class="accent">.</span></span>
+      </div>
+      <p>Proyecto académico SMR — Mini-Datacenter de Aula · 2025</p>
+      <p class="footer-names">Juan Diego Molina · José María Salazar · Eric Suarez · Jesús Medina</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fase, .servicio-card, .miembro-card, .ra-item, .presup-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
